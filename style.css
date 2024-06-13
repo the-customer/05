@@ -1,0 +1,92 @@
+@import url('https://fonts.google/css?family=Montserrat:wght300');
+
+
+body{
+    background-color: #000;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #515050;
+}
+
+.container{
+    background-color: whitesmoke;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    background-color: rgb(225, 223, 224);
+    flex: 1;
+}
+
+.header{
+    flex: 2;
+}
+
+.month{
+    flex: 12;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actual-month{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.today button{
+    padding: 5px 10px;
+    border: 1px solid gainsboro;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.day-title{
+    display: flex;
+    padding-top: 25px;
+}
+
+.day-title span{
+    flex: 1;
+    text-align: right;
+    padding-right: 1.5%;
+}
+
+.month{
+    display: flex;
+    flex-direction: column;
+}
+
+.month .week{
+    flex: 1;
+    display: flex;
+    /* padding-right: 1.5%; */
+}
+
+.month .week .day{
+    flex: 1;
+    border: 0.5px solid gainsboro;
+    display: flex;
+    justify-content: end;
+    padding: 1% 2% 0 0;
+    border-right: none;
+}
+
+.day.active span{
+    background-color: rgb(227, 51, 51);
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    position: fixed;
+    padding: 0.4%;
+}
